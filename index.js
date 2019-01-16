@@ -1,7 +1,7 @@
 function handleLocationHash() {
-	console.log("location.hash: " + location.hash);
+	document.body.innerHTML = location.hash;
 }
 
 handleLocationHash()
 window.onhashchange = handleLocationHash;
-//module.exports = app.mount('body')
+module.exports = app.mount('body')
