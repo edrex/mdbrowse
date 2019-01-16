@@ -1,0 +1,17 @@
+{
+  "name": "mdbrowse",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bankai build index.js",
+    "inspect": "bankai inspect index.js",
+    "start": "bankai start index.js",
+    "test": "standard && npm run test-deps",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bankai": "^9.15.0",
+    "dependency-check": "^3.3.0"
+  }
+}
