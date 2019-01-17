@@ -9,7 +9,9 @@
     "test": "standard && npm run test-deps",
     "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
   },
-  "dependencies": {},
+  "dependencies": {
+    "marked": "^0.6.0"
+  },
   "devDependencies": {
     "bankai": "^9.15.0",
     "dependency-check": "^3.3.0"
